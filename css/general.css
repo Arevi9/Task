@@ -9,96 +9,72 @@ body{background-color: #A69CAC;
     border-radius: 8px;
     text-align: center;}
 
-    .header{
-        background-color: #482b19;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+
+    .topnav {
+        z-index: 2;
+        overflow: hidden;
+        background-color: #ed7230;
         height: 100px;
-        padding: 5px, 10%;
-    }
-    
-    nav{
         display: flex;
-        align-items: center;
-        padding-top: 20px;
-        padding-left: 5%;
-        padding-right: 5%;
-        color: #f6ebd7;
-    }
+        position: fixed;
+        right: 0;
+        left: 0;
     
-    #logo{
-        color: #f6ebd7; 
+            }
+    
+    .topnav #chefconnect {
+        float: left;
+        display: block;
+        color: #FFF2E2;
+        text-align: center;
+        padding: 28px 20px;
         text-decoration: none;
-        font-family: 'Gabarito';
-        font-weight: 900;
+        margin-right: 1230px;
+        font-size: 40px; }
+    
+    .topnav .search_container {
+            float: right;
+        }
+    
+    .topnav .search_container #search_form {
+        height: 100px;
+        min-width: max-content;
     }
     
-    .header #logo{
-        height: 70px;
-        width: auto;
-        margin: 2%;
-        margin-right: auto;
-        margin-top: auto;
-        padding: 2%;
-        font-size: 40px;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
-    
-    .header .logo:hover{
-        transform: scale(1.2);
-    }
-    
-    .header a{
-        color: #f6ebd7;
-    }
-    
-    .header .menuTop a:hover{
-        color: #7dc08b;
-        transform: scale(1.1);
-    }
-    
-    .header .menuTop{
-        list-style: none;
+    .topnav #search_form input[type=text] {
+        padding: 10px;
+        padding-right: 70px;
+        border: none;
+        margin-top: 30px;
         font-size: 18px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    
     }
     
-    .header .menuTop li{
-        display: inline;
-        padding: 0 20px;
-    }
-    
-    .header .menuTop a{
-       font-size: 700;
-       text-decoration: none; 
-    }
-    
-    .header .btn button{
-        font-size: 18px;
-        font-family: 'Montserrat';
-        width: 170px;
-        color: #f6ebd7;
-        padding: 5%;
-        margin: 10%;
-        margin-left: 5%;
-        background-color: #7dc08b;
-        border: none ;
-        border-radius: 50px;
-        transition: all 0.3 ease 0s;
+    .topnav .search_container #search_form button {
+        float: right;
+        padding: 11px;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 30px;
+        background: #9F5818;
+        color: #FFF2E2;
+        font-size: 17px;
+        border: none;
         cursor: pointer;
-        box-shadow:  none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    
+    .topnav .profile_pic img {
+        width: 65px;
+        background-color: #FFF2E2;
+        border-radius: 50%;
     }
     
-    .header .btn button:hover{
-        background-color: #f6ebd7;
-        color: #7dc08b;
-        /*transform: scale(1.1);*/
+    .topnav .profile_menu {
+        width: 100px;
+        margin: 0px 30px 0px 0px;
     }
-    
-    .header .imgRounded{
-        width: 70px;
-        height: 70px;
-    }
-    
     
