@@ -1,5 +1,5 @@
 body{background-color: #A69CAC;
-    background: linear-gradient(#474973, #0d0c1d);}
+    }
 
 .Btn {    padding: 10px;
     background-color: #E9D985;
@@ -13,7 +13,7 @@ body{background-color: #A69CAC;
     .topnav {
         z-index: 2;
         overflow: hidden;
-        background-color: #ed7230;
+        background-color: #53bdbc;
         height: 100px;
         display: flex;
         position: fixed;
@@ -22,12 +22,12 @@ body{background-color: #A69CAC;
     
             }
     
-    .topnav #chefconnect {
+    .topnav #Topnav-logo {
         float: left;
         display: block;
         color: #FFF2E2;
         text-align: center;
-        padding: 28px 20px;
+        padding: 12px 20px;
         text-decoration: none;
         margin-right: 1230px;
         font-size: 40px; }
@@ -58,8 +58,8 @@ body{background-color: #A69CAC;
         margin-left: 0;
         margin-right: 10px;
         margin-top: 30px;
-        background: #9F5818;
-        color: #FFF2E2;
+        background: white;
+        color: #53bdbc;
         font-size: 17px;
         border: none;
         cursor: pointer;
@@ -78,3 +78,7 @@ body{background-color: #A69CAC;
         margin: 0px 30px 0px 0px;
     }
     
+
+
+.aaaa{ height: 70px;
+}
