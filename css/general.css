@@ -1,0 +1,10 @@
+body{background-color: #A69CAC;
+    background: linear-gradient(#474973, #0d0c1d);}
+
+.Btn {    padding: 10px;
+    background-color: #E9D985;
+    font-size: 20px;
+    padding: 18px 138px;
+    border: solid #E9D985;
+    border-radius: 8px;
+    text-align: center;}
