@@ -32,7 +32,7 @@ form {
     margin-bottom: 20px;
 }
 
-.user_country {
+.form-control {
   border: none;
     background-color: #FFF2E2;
     height: auto;
@@ -142,16 +142,4 @@ a {
 #popup_form {
     margin: 0px 20px;
     padding: 0;
-  }
-
-#check_button {
-    font-family: 'Nunito';
-    padding: 10px;
-    background-color: #06D85F;
-    font-size: 20px;
-    padding: 15px 130px;
-    border: solid #06D85F;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 30px;
   }
