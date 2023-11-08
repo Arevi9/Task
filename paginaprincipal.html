@@ -5,15 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/general.css">
+
+    <style>
+      
+     body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+
+    .contenedor{
+        width: 70%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }    
+
+    .cards {
+        width: 70%;
+        height: auto;
+        display: flex;
+        background-color: antiquewhite;
+        flex-direction: column;
+        margin: 40px;
+        border-radius: 20px;
+        justify-content: flex-start;
+    }
+
+    .tareas-pendientes {
+        width: 70%;
+        height: auto;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        margin: 10px;
+        border: 1px solid rgb(0, 255, 68);
+        
+         }
+
+       .tareas-pendientes--enproceso {
+        width: 70%;
+        height: auto;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        margin: 10px;
+        border: 1px solid rgb(165, 110, 42);
+       }
+
+
+    </style>
 </head>
 <body>
    <header><nav></nav></header>
 
    <body>
     <div class="contenedor">
-      <div class="tarjetas">
-
-      </div>
+      
+     <div class="cards">
+          <h3>Tareas Pendientes</h3>
+          <div class="tareas-pendientes">
+            <div>
+                Hacer la cabecera de la app
+            </div>
+          </div>
+          <div class="tareas-pendientes tareas-pendientes--enproceso">
+            <div>
+                Hacer fotos del patio
+            </div>
+        </div>
+        </div>
+         <div class="cards">
+            <h3>Tareas Acabadas</h3>
+            <div class="tareasPendientes">
+            </div>
+            <div class="tareas-pendientes tareas-pendientes--enproceso">
+          </div>
+          </div>
+      
     </div>
    </body>
 </body>
