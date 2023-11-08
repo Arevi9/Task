@@ -1,10 +1,10 @@
 body{background-color: #e2e5e9;
     
     }
-    
+
 :root{
---default-color: #53bdbc
---default-color-active:#53bdbc
+--default-color: #53bdbc;
+--default-color-active:#368f8d;
 --done-color: 
 
 }
