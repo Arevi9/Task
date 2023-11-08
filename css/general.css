@@ -1,6 +1,14 @@
 body{background-color: #e2e5e9;
     
     }
+    
+:root{
+--default-color: #53bdbc
+--default-color-active:#53bdbc
+--done-color: 
+
+}
+
 
 .Btn {    font-family: 'Nunito';
     padding: 10px;

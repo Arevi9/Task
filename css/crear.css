@@ -1,11 +1,43 @@
-form{ background-color: ;}
+.fullscreen{ display: flex;
+}
+
+legend{font-size: 30px;}
+
+.container {display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    margin-top: 150px;
+    background-color: #53bdbc;
+    border-radius: 10px;  
+    overflow: hidden; } 
+    
+    .container-form{    display: flex;
+        flex-direction: column;
+          width: 400px;
+          margin: 0 auto;
+          padding: 40px 15px;
+          margin-bottom: 20px; }
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"] {
+    border: none;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    outline: 0;
+    padding: 15px;
+    width: 380px;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 5px;}
 
 
 
 
-
-#4ebcbc
-#cfd1d2
-#e2e5e9
-#f5ca92
-#528ecb

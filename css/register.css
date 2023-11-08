@@ -5,19 +5,7 @@
   justify-content: center;
   width: 100%;}
 
-.containerSing-up{    
-  text-align: center;
-  min-width: 50%;
-  padding: 90px 130px;
-  align-items: center;
-}
 
-.sing-up{    
-    background-color: #53bdbc;
-    width: 70%;
-    min-height: 300px;
-    margin: 0 auto;
-    border-radius: 8px;}
 
 .containerRegister {
     text-align: center;
@@ -25,12 +13,7 @@
     padding: 90px 130px;
     align-items: center;
 }
-.LogoTask{ 
-  display: flex;  
-  margin: 0 auto;
-  height: 150px;
-  width: 400px
-}
+
 #logo {
     font-size: 50px;
     color: #161B33;
@@ -176,3 +159,4 @@ a {
   h2{margin-bottom: 30px;
   margin-top: 30px;
 font-size: xx-large;}
+
