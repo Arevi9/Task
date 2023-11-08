@@ -1,0 +1,105 @@
+#containerPrincipal {
+    text-align: center;
+    min-width: 500px;
+    padding: 150px;
+}
+
+#containerT {
+    margin: 0 auto;
+    display: inline-block;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    vertical-align: middle;
+}
+
+#logo {
+    
+
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.eslogan {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 0;
+    margin-left: 15px;
+    color: #53bdbc;
+}
+
+#login {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 450px;
+    min-width: 450px;
+    background-color: #53bdbc;
+    margin-left: 80px;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+form {
+    width: 400px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    border: none;
+    background-color: #FFF2E2;
+    height: auto;
+    margin-top: 18px;
+    outline: 0;
+    padding: 15px;
+    width: 360px;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+
+#register_button {
+    background-color: #a8bb61;
+    font-size: 23px;
+    padding: 25px 100px;
+    border: solid #a8bb61;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #5a534d;
+}
+
+hr {
+    border-color: #FFF2E2;
+}
+
+footer {
+    text-align: center;
+    color: #5a534d;
+}
+
+#footer_list li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer p {
+    font-size: 13px;
+}

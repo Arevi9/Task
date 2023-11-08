@@ -1,7 +1,17 @@
-#containerPrincipal {
+
+
+.general{ display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;}
+
+
+
+.containerRegister {
     text-align: center;
-    min-width: 500px;
+    min-width: 50%;
     padding: 90px 130px;
+    align-items: center;
 }
 
 #logo {
@@ -17,22 +27,24 @@ h2 {
     margin-top: 0;
 }
 
-#register {
-    background-color: #A69CAC;
-    width: 40%;
+.register {
+    background-color: #53bdbc;
+    width: 70%;
     min-height: 550px;
     margin: 0 auto;
     border-radius: 8px;
 }
 
 form {
+  display: flex;
+  flex-direction: column;
     width: 400px;
     margin: 0 auto;
     padding: 40px 15px;
     margin-bottom: 20px;
 }
 
-.user_country {
+.form-control {
   border: none;
     background-color: #FFF2E2;
     height: auto;
@@ -127,7 +139,7 @@ a {
     color: #333;
   }
   .popup .close:hover {
-    color: #06D85F;
+    color: #548ECB;
   }
   .popup .content {
     max-height: 50%;
@@ -144,14 +156,7 @@ a {
     padding: 0;
   }
 
-#check_button {
-    font-family: 'Nunito';
-    padding: 10px;
-    background-color: #06D85F;
-    font-size: 20px;
-    padding: 15px 130px;
-    border: solid #06D85F;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 30px;
-  }
+  h2{margin-bottom: 30px;
+  margin-top: 30px;
+font-size: xx-large;}
+
