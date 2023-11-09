@@ -18,7 +18,8 @@ body{background-color: #e2e5e9;
     border: solid #f5ca92;
     border-radius: 10px;
     text-align: center;
-    margin-top: 30px;}
+    margin-top: 30px;
+    box-shadow: 4px 4px 15px #368f8d;}
 
 
     .topnav {
@@ -37,12 +38,17 @@ body{background-color: #e2e5e9;
         display: flex;
         float: left;
         display: block;
-        color: #FFF2E2;
+       
         text-align: center;
         padding: 12px 20px;
         text-decoration: none;
-        margin-right: 1230px;
+       
         font-size: 40px; }
+
+    .topnav .Topnav-buttons{ display: flex;
+    float: left;
+    position: relative;
+    }
     
     .topnav .search-container {
         display: flex;
@@ -80,11 +86,11 @@ body{background-color: #e2e5e9;
         border-bottom-right-radius: 5px;
       }
     
-    .topnav .profile-pic img {
-        width: 70px;
+.profile-pic img { display: flex;
+        justify-content: right;
         background-color: #FFF2E2;
         border-radius: 50%;
-        
+        float: right;
     }
 
     li{list-style: none;}
@@ -96,5 +102,5 @@ body{background-color: #e2e5e9;
     
 
 
-.aaaa{ height: 70px;
+.Topnav-logo-img{ height: 70px;
 }

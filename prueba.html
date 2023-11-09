@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.Topnav{ background-color: #53bdbc;
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 100px;
+right: 0;
+left: 0;
+top: 0;
+overflow: hidden;
+position: fixed;}
+
+.Topnav-logo {
+        display: flex;
+        float: left;
+        padding: 12px 20px;
+ }
+
+ .Topnav-buttons{ display: flex;
+    float: left;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+    margin-left: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+.Topnav-buttons--decoration {
+        background-color: white;
+        height: 40px;
+        width: 130px;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        border-radius: 30px;
+    }
+h2 {margin-top: 7px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #357775;
+}
+.Search-container {
+        display: flex;
+            float: right;
+        }
+.Search-container #Search-form {
+        height: 100px;
+        min-width: max-content;
+    }
+    
+ #Search-form input[type=text] {
+        padding: 10px;
+        padding-right: 70px;
+        margin-left: 550px;
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    
+    }
+    
+.Search-container #Search-form button {
+        float: right;
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 30px;
+        margin-top: 30px;
+        background: white;
+        color: #53bdbc;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+.Profile-pic img {
+        width: 80px;
+        border-radius: 50%;
+        margin-top: 10px;   
+    }
+a{text-decoration: none;}
+
+</style>
+<body>
+  <div class="Topnav">
+    <div class="Topnav-logo"><img class="Topnav-logo-img" src="/logo/1x/task sobre blanco.png" alt="Logo"></div>
+    <div class="Topnav-buttons">
+        <div class="Topnav-buttons--decoration"><a href="/TaskHTML/Creartablero.html"><h2>Crear tarea</h2></a></div>
+        <div class="Topnav-buttons--decoration"><h2>Usuarios</h2></div>
+        <div class="Topnav-buttons--decoration"><h2>Calendario</h2></div>
+  
+      </div>
+      <div class="Search-container">
+        <form id="Search-form" action="mainpage.html">
+            <input type="text" placeholder="Buscar">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+  </div>  
+  <div class="Profile-pic"><img src="/img/perfil1.png"/></div>
+</body>
+</html>

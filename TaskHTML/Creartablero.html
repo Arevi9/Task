@@ -19,7 +19,13 @@
 
 <div class="topnav">
     <div>
-        <div id="Topnav-logo"><img class="aaaa" src="/logo/1x/task sobre blanco.png" alt="Logo"></div>
+        <div id="Topnav-logo"><img class="Topnav-logo-img" src="/logo/1x/task sobre blanco.png" alt="Logo"></div>
+    </div>
+    <div class="Topnav-buttons">
+      <div id="Topnav-buttons-create">Crear tarea</div>
+      <div id="Topnav-buttons-users">Usuarios</div>
+      <div id="Topnav-buttons-calendar">Calendario</div>
+
     </div>
     <div class="search-container">
         <form id="search-form" action="mainpage.html">
@@ -42,28 +48,47 @@
 
   <div class="fullscreen">
     <div class="container">
-        <div class="tablero"> <h1>Crear tablero</h1></div>
+        <div class="tablero"> <h1>Nueva tarea</h1></div> 
 
   <div class="container-form">
     <div>
       <form id="crearTablero">
        
-          <label for="recipe_name">Título:</label>
-          <input type="text" id="recipe_name">
+          <label for="crear_name"><h2>Título</h2></label>
+          <input type="text" id="crear_name">
 
-          <label for="image">Imagen</label>
-          <input type="file" id="recipe_image">
+          <label for="descripcion"><h2>Descripción</h2></label>
+          <textarea name="description" id="description" cols="50" rows="10"></textarea>
+          
+          <label for="members"><h2>Miembros</h2>
+          <input class="members-checkbox" type="checkbox">
+            <img class="members-img" src="/img/perfil1.png" alt="perfil1">
+          <input class="members-checkbox" type="checkbox">
+            <img class="members-img" src="/img/perfil1.png" alt="perfil1">
+          <input class="members-checkbox" type="checkbox">
+            <img class="members-img" src="/img/perfil1.png" alt="perfil1">
+          <input class="members-checkbox" type="checkbox">
+            <img class="members-img" src="/img/perfil1.png" alt="perfil1">
+        
+        </label> <br>
 
-          <label for="recipe_ing">Ingredientes:</label>
-          <textarea name="Recipe" id="recipe_ing" cols="53" rows="5"></textarea>
+          <br>
+          <label for="tags"><h2>Etiquetas</h2> <br>
+          <div class="tags">
+            <input class="tags-checkbox" type="checkbox">
+            <div class="tags-normal"></div>
 
-          <label for="recipe_proccess">Proceso:</label>
-          <textarea name="Recipe" id="recipe_process" cols="53" rows="10"></textarea>
+         <input class="tags-checkbox" type="checkbox">
+          <div class="tags-importante" > </div>
 
-          <label for="comensales">Comensales:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="20">
+          <input class="tags-checkbox" type="checkbox">
+         <div class="tags-urgente" ></div>
 
+          </div></label> <br> <br>
+
+          <button type="submit" class="Btn Btn--center">Crear tablero</button>
          </form>
+        
 
 
 

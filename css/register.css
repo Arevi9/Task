@@ -33,6 +33,7 @@ h2 {
     min-height: 550px;
     margin: 0 auto;
     border-radius: 8px;
+    box-shadow: 4px 4px 15px #429593;
 }
 
 form {
@@ -46,7 +47,7 @@ form {
 
 .form-control {
   border: none;
-    background-color: #FFF2E2;
+    background-color: white;
     height: auto;
     margin: 0px;
     outline: 0;
@@ -63,7 +64,7 @@ form input[type="email"],
 form input[type="password"],
 form input[type="date"] {
     border: none;
-    background-color: #FFF2E2;
+    background-color: white;
     height: auto;
     margin: 0px;
     outline: 0;

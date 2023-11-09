@@ -37,6 +37,7 @@
     margin-left: 80px;
     border-radius: 5%;
     padding: 20px;
+    box-shadow: 4px 4px 15px #368f8d;
 }
 
 form {
@@ -51,7 +52,7 @@ form input[type="text"],
 form input[type="email"],
 form input[type="password"] {
     border: none;
-    background-color: #FFF2E2;
+    background-color: white;
     height: auto;
     margin-top: 18px;
     outline: 0;
@@ -74,6 +75,8 @@ form input[type="password"] {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
+    text-decoration: none;
+    box-shadow: 4px 4px 15px #368f8d;
 }
 
 
@@ -82,11 +85,11 @@ h3 {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 16px;
-    color: #5a534d;
+    color: #000000;
 }
 
 hr {
-    border-color: #FFF2E2;
+    border-color: white;
 }
 
 footer {
