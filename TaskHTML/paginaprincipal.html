@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"/>
 
     <style>
       
      body{
         min-height: 100vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         }
 
     .contenedor{
@@ -25,10 +29,10 @@
     }    
 
     .cards {
-        width: 70%;
+        width: 80%;
         height: auto;
         display: flex;
-        background-color: antiquewhite;
+        background-color: rgb(255, 255, 255);
         flex-direction: column;
         margin: 40px;
         border-radius: 20px;
@@ -56,17 +60,102 @@
         border: 1px solid rgb(165, 110, 42);
        }
 
+       .historial {
+        width: 30%;
+        height: 300px;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;  
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+       }
+
+       .titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Frankli Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(202, 214, 214);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: rgb(255, 255, 255);
+        
+       }
+
+       .historial-usuario {
+       display: flex;
+       flex-direction: row;
+       margin: 5px;
+       }
+
+       .caja-historial {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+       }
+
+       .profile-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+
+       }
+
+       .username {
+       font-size: smaller;
+       font-family: Arial, Helvetica, sans-serif;
+       }
+
+       .texto-historial {
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 0px;
+
+       }
+
+       .caja-texto {
+        display: flex;
+        flex-direction: column;
+        
+        }
+
+        .titulo--cards {
+         background-color: aqua;   
+        }
+
 
     </style>
 </head>
 <body>
-   <header><nav></nav></header>
+   <!--NAVIGATION BAR-->
+
+<div class="topnav">
+    <div>
+        <div id="Topnav-logo"><img class="aaaa" src="/logo/1x/task sobre blanco.png" alt="Logo"></div>
+    </div>
+    <div class="search-container">
+        <form id="search-form" action="mainpage.html">
+            <input type="text" placeholder="Buscar">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="profile-menu">
+      <ul>
+        <li class="profile-pic">
+          <img src="/img/perfil1.png"/>
+          
+        </li>
+      </ul>
+    </div>
+
+</div>
 
    <body>
     <div class="contenedor">
       
      <div class="cards">
-          <h3>Tareas Pendientes</h3>
+          <div class="titulo"><h3>Tareas Pendientes</h3></div>
           <div class="tareas-pendientes">
             <div>
                 Hacer la cabecera de la app
@@ -74,19 +163,34 @@
           </div>
           <div class="tareas-pendientes tareas-pendientes--enproceso">
             <div>
-                Hacer fotos del patio
+                Hacer fotos del patio de noche
             </div>
         </div>
         </div>
          <div class="cards">
-            <h3>Tareas Acabadas</h3>
+            <div class="titulo titulo--cards"><h3>Tareas Terminadas</h3></div>
             <div class="tareasPendientes">
             </div>
             <div class="tareas-pendientes tareas-pendientes--enproceso">
           </div>
           </div>
-      
-    </div>
+      </div>
+      <div class="historial">
+        <div class="titulo"> 
+            <h3>Historial</h3>
+        </div>
+        <div class="historial-usuario">
+            <img class="profile-picture" src="../img/perfil1.png" alt="Imagen de usuario">
+         <div class="caja-historial">   
+         <h1 class="username">Lara Rodriguez</h1>
+          <p class="texto-historial">Ha hecho cambios en la tarjeta de Tareas acabadas</p>
+        </div>
+     </div>
+              </div>
+     
+
+
+     
    </body>
 </body>
 </html>
