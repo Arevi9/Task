@@ -46,11 +46,12 @@
         margin: 30px;
         border-radius: 20px;
         justify-content: flex-start;
+        align-items: center;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
     .tareas-pendientes {
-        width: 100%;
+        width: 92%;
         height: auto;
         display: flex;
         background-color: rgb(255, 255, 255);
@@ -59,7 +60,8 @@
         border: 3px solid #DF91A0; 
         padding: 5px;
         border-radius: 20px;
-        
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
          }
 
        .tareas-pendientes--enproceso {
@@ -69,11 +71,18 @@
        .tareas-pendientes--termianadas {
         border: 3px solid #46a1a0;
         width: 90%;
+        background-color: rgba(142, 220, 118, 0.59);
+        flex-direction: column;
+        margin: 10px;
+        border: 3px solid #ffffff; 
+        padding: 5px;
+        border-radius: 20px;
+        color: white;
        }
 
        .historial {
-        width: 20%;
-        height: 300px;
+        width: 25%;
+        height: auto;
         display: flex;
         background-color: rgb(255, 255, 255);
         flex-direction: column;  
@@ -85,7 +94,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: 'Frankli Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Quicksand', sans-serif;
         background-color: rgb(202, 214, 214);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -115,13 +124,13 @@
 
        .username {
        font-size: smaller;
-       font-family: Arial, Helvetica, sans-serif;
+       font-family: 'Quicksand', sans-serif;
       margin-left: 5px;
        }
 
        .texto-historial {
         font-size: small;
-        font-family: Arial, Helvetica, sans-serif; 
+        font-family: 'Quicksand', sans-serif; 
         margin-top: 0px;
 
        }
@@ -132,17 +141,26 @@
         
         }
 
-        .titulo--cards {
-         background-color: #53bdbc;   
+        .titulo-cards {
+         background-color: #53bdbc; 
+         display: flex;
+        width: 100%;
+        justify-content: center;
+        font-family: 'Quicksand', sans-serif;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: rgb(255, 255, 255);  
         }
 
         .foto-usuario {
         width: 30px;
         height: 30px;  
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
         }
 
         .texto {
-         font-family: Arial, Helvetica, sans-serif ; 
+          font-family: 'Quicksand', sans-serif;
          margin: 10px;
         }
 
@@ -163,14 +181,22 @@
         .pendiente--abel {
           background-color:rgb(17, 0, 255);  
         }
+        .pendiente--bea {
+          background-color:rgb(13, 255, 0);  
+        }
         
         .titulo-tareas {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Quicksand', sans-serif;
           background-color: #53bdbc;
           border-radius: 10px;
           color: white;
           font-size:medium;
           padding: 3px;
+        }
+
+        .titulo-tareas--terminadas {
+          background-color: #ffffff;  
+          color: #53bdbc;
         }
 
 
@@ -203,7 +229,7 @@
     <div class="contenedor">
       
      <div class="cards">
-          <div class="titulo titulo--cards"><h3>Tareas Pendientes</h3></div>
+          <div class="titulo-cards"><h3>Tareas Pendientes</h3></div>
           <div class="tareas-pendientes tareas-pendientes--enproceso">
             <div>
               <div class="caja-usuario"></div>
@@ -227,9 +253,9 @@
               <h1 class="username">Abel Guti</h1>
               <div class="pendiente pendiente--abel"></div>
               </div class="caja-tareas">
-              <h3 class="titulo-tareas">Página Web</h3>
+              <h3 class="titulo-tareas">App Muñecos</h3>
               <div>
-               <li class="texto">Hacer la cabecera de la app</li> 
+               <li class="texto">Pintar las rayas de gris</li> 
             </div>
           </div>
           </div>
@@ -243,8 +269,8 @@
               </div class="caja-tareas">
               <h3 class="titulo-tareas">Página Web</h3>
               <div>
-               <li class="texto">Hacer la cabecera de la app</li> 
-               <li class="texto">Pasar apuntes a limpio</li>
+               <li class="texto">Hacer las hojas de cálculo</li> 
+               <li class="texto">Limpiar apuntes</li>
             </div>
           </div>
           </div>
@@ -252,13 +278,13 @@
             <div>
               <div class="caja-usuario"></div>
               <div class="caja-usuario">
-                <img class="foto-usuario" src="../img/1x/USUARIO1.png">
-              <h1 class="username">Lara Rodriguez</h1>
-              <div class="pendiente"></div>
+                <img class="foto-usuario" src="../img/1x/1x/usuario3.png">
+              <h1 class="username">Bea Bernal</h1>
+              <div class="pendiente pendiente--bea"></div>
               </div class="caja-tareas">
-              <h3 class="titulo-tareas">Página Web</h3>
+              <h3 class="titulo-tareas">App Marketing</h3>
               <div>
-               <li class="texto">Hacer la cabecera de la app</li> 
+               <li class="texto">Repasar el SEO</li> 
             </div>
           </div>
           </div>
@@ -266,7 +292,7 @@
           
         </div>
          <div class="cards">
-            <div class="titulo titulo--cards"><h3>Tareas Terminadas</h3></div>
+            <div class="titulo-cards"><h3>Tareas Terminadas</h3></div>
             <div class="tareas-pendientes tareas-pendientes--termianadas">
               <div>
                 <div class="caja-usuario"></div>
@@ -275,9 +301,9 @@
                 <h1 class="username">Lara Rodriguez</h1>
                 <div class="pendiente"></div>
                 </div class="caja-tareas">
-                <h3 class="titulo-tareas">Página Web</h3>
+                <h3 class="titulo-tareas titulo-tareas--terminadas">Hacer recuento de llamadas</h3>
                 <div>
-                 <li class="texto">Hacer la cabecera de la app</li> 
+                 <li class="texto">Llamar a David</li> 
               </div>
             </div>
           </div>
@@ -289,9 +315,9 @@
               <h1 class="username">Lara Rodriguez</h1>
               <div class="pendiente"></div>
               </div class="caja-tareas">
-              <h3 class="titulo-tareas">Página Web</h3>
+              <h3 class="titulo-tareas titulo-tareas--terminadas">Manual</h3>
               <div>
-               <li class="texto">Hacer la cabecera de la app</li> 
+               <li class="texto">Hacer identidad corporativa</li> 
             </div>
           </div>
         </div>
@@ -305,9 +331,30 @@
             <img class="profile-picture" src="../img/perfil1.png" alt="Imagen de usuario">
          <div class="caja-historial">   
          <h1 class="username">Lara Rodriguez</h1>
-          <p class="texto-historial">Ha hecho cambios en la tarjeta de Tareas acabadas</p>
+          <p class="texto-historial">Ha finalizado la tarea "Hacer recuento de llamadas"</p>
         </div>
      </div>
+     <div class="historial-usuario">
+      <img class="profile-picture" src="../img/perfil1.png" alt="Imagen de usuario">
+   <div class="caja-historial">   
+   <h1 class="username">Lara Rodriguez</h1>
+    <p class="texto-historial">Ha hecho cambios en la tarjeta de Tareas acabadas</p>
+  </div>
+</div>
+<div class="historial-usuario">
+  <img class="profile-picture" src="../img/perfil 3.jpg" alt="Imagen de usuario">  
+<div class="caja-historial">   
+<h1 class="username">Bea Bernal</h1>
+<p class="texto-historial">Ha empezado una nueva tarea</p>
+</div>
+</div>
+<div class="historial-usuario">
+  <img class="profile-picture" src="../img/perfil2.jpg" alt="Imagen de usuario">
+<div class="caja-historial">   
+<h1 class="username">Alvaro</h1>
+<p class="texto-historial">Ha empezado una nueva tarea</p>
+</div>
+</div>
               </div>
      
 
