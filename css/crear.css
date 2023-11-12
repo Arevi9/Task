@@ -15,10 +15,11 @@ legend{font-size: 30px;}
     width: 60%;
     height: 100%;
     margin-top: 150px;
-    background-color: #cfd1d2;
+    background-color: white;
     border-radius: 10px;  
     overflow: hidden;
-    box-shadow: 4px 4px 10px #969797; } 
+    box-shadow: 4px 4px 10px #969797;
+    border: 4px solid #53bdbc; } 
     
     .Container-form{    display: flex;
         flex-direction: column;
@@ -26,11 +27,12 @@ legend{font-size: 30px;}
           margin: 0 auto;
           padding: 40px 15px;
           margin-bottom: 20px;
+         
          }
 
 
 textarea{    border: none;
-    background-color: white;
+    background-color:   #cfd1d2;
     height: auto;
     margin: 0px;
     outline: 0;
@@ -46,7 +48,7 @@ form input[type="email"],
 form input[type="password"],
 form input[type="date"] {
     border: none;
-    background-color: white;
+    background-color:  #cfd1d2;
     height: auto;
     margin: 0px;
     outline: 0;
@@ -58,7 +60,7 @@ form input[type="date"] {
     border-radius: 5px;}
 
 .Input-text {    border: none;
-    background-color: white;
+    background-color:  #cfd1d2;
     height: auto;
     margin: 0px;
     outline: 0;
@@ -109,8 +111,13 @@ font-size: 20px;
 }
 h1{
 font-weight:bolder;
-
+text-align: center;
 font-size: xx-large;}
+
+hr{
+    border-color: #69dbd9;
+width: 900px;
+margin-top: 20px;}
 
 .Btn--center{ position: relative;
     display: flex;

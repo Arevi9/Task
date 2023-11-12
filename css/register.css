@@ -21,6 +21,7 @@ h2 {
 }
 
 .Register {
+  display: flex;
     background-color: #53bdbc;
     width: 70%;
     min-height: 550px;
@@ -154,7 +155,10 @@ a {
   margin-top: 30px;
 font-size: xx-large;}
 
-@media screen (max-width:700px) {
+@media screen and (max-width:700px) {
+  .Container-Register {width: 100%;}
+  .Register{width: 100%;
+  }
 
 
   
