@@ -1,0 +1,63 @@
+.Fullscreen {display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Container-Calendar{display: flex;
+    margin: 0 auto;
+   align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-top: 50px;
+    }
+    h2{ margin: 0 auto;
+        margin-top: 150px;
+        margin-bottom: 0px;
+        font-size: 50px;
+    }
+
+.Tarea{ background-color: #f5ca92;;
+margin-top: 10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 400px;
+border-radius: 10px;
+}
+
+.Perfil-img {      width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+margin-right: 10px;}
+    
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 7px;
+    margin-top: 0%;
+    text-align: left;
+  }
+
+  th {
+    background-color: #53bdbc;
+  }
+
+  td {
+    height: 80px;
+    width: 300px;
+ 
+  }
+  .Tarea2{  background-color: aquamarine;;
+    margin-top: 10px;;
+    align-items: center;
+    width: 400px;
+    border-radius: 10px;}

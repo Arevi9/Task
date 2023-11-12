@@ -1,10 +1,18 @@
-#containerPrincipal {
+body {        background-image: url(../img/fondo\ libreta.png);
+    background-size:contain;
+   /* Ajusta la imagen para cubrir todo el fondo */
+   background-position: center; /* Centra la imagen en el fondo */
+   background-repeat: no-repeat;}
+
+
+
+#Container-Principal {
     text-align: center;
     min-width: 500px;
     padding: 150px;
 }
 
-#containerT {
+#ContainerT {
     margin: 0 auto;
     display: inline-block;
     padding-top: 150px;
@@ -12,7 +20,7 @@
     vertical-align: middle;
 }
 
-#logo {
+#Logo {
     
 
     text-align: center;
@@ -39,8 +47,9 @@
     font-family: 'Quicksand', sans-serif;
     text-align: center;
  }
+ .Inicio-Btn {width: 250; margin-bottom: 30px; margin-top: 15px;}
 
-#login {
+#Login {
     display: inline-block;
     vertical-align: middle;
     min-height: 450px;
@@ -80,7 +89,7 @@ form input[type="password"] {
 a {text-decoration: none;
 color: black;}
 
-#register_button {
+#Register-Button {
     background-color: #a8bb61;
     font-size: 23px;
     padding: 25px 100px;
@@ -93,8 +102,6 @@ color: black;}
     box-shadow: 4px 4px 15px #368f8d;
 }
 
-
-
 h3 {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -106,8 +113,13 @@ margin: 0 auto;}
 hr {
     border-color: white;
 }
+.BackG-Eslogan{ background-color:  #e2e5e9;
+padding: 20px;
+border-radius: 10px;
+border: 10px;
+color: #e2e5e9;}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
 
 .containerT{ width: 100%;
     display: flex;
@@ -122,6 +134,7 @@ hr {
 
 hr {
     width: 100%;}
+body {width: 100%;}
 
 }
 
