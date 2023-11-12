@@ -9,15 +9,15 @@
    align-items: center;
     width: 90%;
     height: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     }
-    h2{ margin: 0 auto;
+h2{ margin: 0 auto;
         margin-top: 150px;
         margin-bottom: 0px;
         font-size: 50px;
     }
 
-.Tarea{ background-color: #f5ca92;;
+.Tarea{ background-color: #ff00a2;
 margin-top: 10px;
 display: flex;
 flex-direction: row;
@@ -56,8 +56,8 @@ margin-right: 10px;}
     width: 300px;
  
   }
-  .Tarea2{  background-color: aquamarine;;
-    margin-top: 10px;;
+  .Tarea2{  background-color: aquamarine;
+    margin-top: 10px;
     align-items: center;
     width: 400px;
     border-radius: 10px;}

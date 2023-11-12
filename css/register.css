@@ -1,25 +1,17 @@
 
 
-.general{ display: flex;
+.General{ display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;}
 
 
 
-.containerRegister {
+.Container-Register {
     text-align: center;
     min-width: 50%;
     padding: 90px 130px;
     align-items: center;
-}
-
-#logo {
-    font-size: 50px;
-    color: #161B33;
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0;
 }
 
 h2 {
@@ -28,7 +20,7 @@ h2 {
     font-family: 'Quicksand', sans-serif;
 }
 
-.register {
+.Register {
     background-color: #53bdbc;
     width: 70%;
     min-height: 550px;
@@ -46,7 +38,7 @@ form {
     margin-bottom: 20px;
 }
 
-.form-control {
+.Form-Control {
   border: none;
     background-color: white;
     height: auto;
@@ -162,3 +154,8 @@ a {
   margin-top: 30px;
 font-size: xx-large;}
 
+@media screen (max-width:700px) {
+
+
+  
+}
