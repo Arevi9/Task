@@ -101,7 +101,28 @@ h3 {
     font-size: 16px;
     color: #000000;
 }
-h4{ color: white;}
+h4{ color: white;
+margin: 0 auto;}
 hr {
     border-color: white;
 }
+
+@media screen and (max-width: 900px) {
+
+.containerT{ width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+ }
+
+#login {width: 100%;
+     display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;}
+
+hr {
+    width: 100%;}
+
+}
+
+
