@@ -15,18 +15,30 @@
 #logo {
     
 
-    text-align: left;
-    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 20px;
     margin-top: 30px;
+    width: 500px;
+    margin-left: 100px;
 }
 
-.eslogan {
-    text-align: left;
-    font-size: 40px;
+.Eslogan {
+
+    font-size: 35px;
     margin-top: 0;
-    margin-left: 15px;
+    margin-bottom: 10px;
     color: #53bdbc;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
+
+.Eslogan-h3{   
+    font-size: 25px;
+    margin-top: 0;
+    color: #53bdbc;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+ }
 
 #login {
     display: inline-block;
@@ -65,6 +77,8 @@ form input[type="password"] {
 
 }
 
+a {text-decoration: none;
+color: black;}
 
 #register_button {
     background-color: #a8bb61;
@@ -87,22 +101,7 @@ h3 {
     font-size: 16px;
     color: #000000;
 }
-
+h4{ color: white;}
 hr {
     border-color: white;
-}
-
-footer {
-    text-align: center;
-    color: #5a534d;
-}
-
-#footer_list li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-footer p {
-    font-size: 13px;
 }

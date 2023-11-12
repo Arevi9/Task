@@ -13,7 +13,7 @@ legend{font-size: 30px;}
     background-color: #cfd1d2;
     border-radius: 10px;  
     overflow: hidden;
-    box-shadow: 4px 4px 15px #969797; } 
+    box-shadow: 4px 4px 10px #969797; } 
     
     .Container-form{    display: flex;
         flex-direction: column;
@@ -72,7 +72,7 @@ form input[type="date"] {
     border-radius: 50%;
     margin-top: 30px;
     object-fit: cover;
-    box-shadow: 4px 4px 15px #969797;}
+    box-shadow: 4px 4px 10px #969797;}
     
 
 .Members-checkbox {
@@ -96,7 +96,7 @@ form input[type="date"] {
 
 .Tags-normal:hover { background-color: var(--Normal-color-active);}
 .Tags-importante:hover {background-color: var(--Importante-color-active);}
-.Tags-urgente:hover{background-color: var(--Urgente-color-active);}
+.Tags-urgente:hover{background-color: var(--Urgente-color-active); }
 
 
 h2{font-family: Arial, Helvetica, sans-serif;
@@ -112,7 +112,9 @@ font-size: xx-large;}
 justify-content: center;
 margin-left: 23%;
 background-color: #53bdbc;
-border-color: #53bdbc;}
+border-color: #53bdbc;
+font-family: 'Quicksand', sans-serif;}
+
 
 :root{
     --Normal-color: #548ecb;
