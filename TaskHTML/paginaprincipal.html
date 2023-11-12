@@ -15,13 +15,113 @@
         min-height: 100vh;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items:center;
+        justify-content: space-around;
         }
+        .Btn {    font-family: 'Nunito';
+    padding: 10px;
+    background-color: #f5ca92;
+    font-size: 20px;
+    padding: 15px 130px;
+    border: solid #f5ca92;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 4px 4px 15px #368f8d;}
+
+
+    .Topnav{ background-color: #53bdbc;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        right: 0;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        position: fixed;}
+        
+        .Topnav-logo {
+                display: flex;
+                float: left;
+                padding: 12px 20px;
+         }
+        
+         .Topnav-buttons{ display: flex;
+            float: left;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 70px;
+            margin-left: 95px;
+            align-items: center;
+        
+            }
+        
+        .Topnav-buttons--decoration {
+                background-color: white;
+                height: 40px;
+                width: 130px;
+                position: relative;
+                padding: 10px;
+                border-radius: 30px;
+            }
+            
+        .H2-buttons { text-align: center;
+            margin-top: 10px;
+            font: weight 700px;;
+            font-size: 18px;
+            color: #46a1a0;
+        }
+        .Search-container {
+                display: flex;
+                    float: right;
+                }
+        .Search-container #Search-form {
+                height: 100px;
+                min-width: max-content;
+            }
+            
+         #Search-form input[type=text] {
+                padding: 10px;
+                padding-right: 70px;
+                margin-left: 500px;
+                border: none;
+                margin-top: 30px;
+                font-size: 18px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            
+            }
+            
+        .Search-container #Search-form button {
+                float: right;
+                padding: 10px;
+                margin-left: 0;
+                margin-right: 30px;
+                margin-top: 30px;
+                height: 41px;
+                width: 40px;
+                background: white;
+                color: #53bdbc;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+              }
+        
+        .Profile-pic img {
+                width: 80px;
+                border-radius: 50%;
+                margin-top: 10px;  
+               
+            }
+            a{text-decoration: none;}
 
     .contenedor{
-        width: 70%;
+        width: 80%;
         max-width: 1200px;
-        margin: auto;
+        margin-top:80px;
         padding: 40px;
         display: flex;
         flex-direction: row;
@@ -34,34 +134,36 @@
         display: flex;
         background-color: rgb(255, 255, 255);
         flex-direction: column;
-        margin: 40px;
+        margin: 30px;
         border-radius: 20px;
         justify-content: flex-start;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
     .tareas-pendientes {
-        width: 70%;
+        width: 100%;
         height: auto;
         display: flex;
         background-color: rgb(255, 255, 255);
         flex-direction: column;
         margin: 10px;
-        border: 1px solid rgb(0, 255, 68);
+        border: 3px solid #DF91A0; 
+        padding: 5px;
+        border-radius: 20px;
         
          }
 
        .tareas-pendientes--enproceso {
-        width: 70%;
-        height: auto;
-        display: flex;
-        background-color: rgb(255, 255, 255);
-        flex-direction: column;
-        margin: 10px;
-        border: 1px solid rgb(165, 110, 42);
+        border: 3px solid #f5ca92;
+       }
+
+       .tareas-pendientes--termianadas {
+        border: 3px solid #46a1a0;
+        width: 90%;
        }
 
        .historial {
-        width: 30%;
+        width: 20%;
         height: 300px;
         display: flex;
         background-color: rgb(255, 255, 255);
@@ -105,6 +207,7 @@
        .username {
        font-size: smaller;
        font-family: Arial, Helvetica, sans-serif;
+      margin-left: 5px;
        }
 
        .texto-historial {
@@ -121,8 +224,46 @@
         }
 
         .titulo--cards {
-         background-color: aqua;   
+         background-color: #53bdbc;   
         }
+
+        .foto-usuario {
+        width: 30px;
+        height: 30px;  
+        }
+
+        .texto {
+         font-family: Arial, Helvetica, sans-serif ; 
+         margin: 10px;
+        }
+
+        .caja-usuario {
+          display: flex;
+          flex-direction: row;
+          
+        }
+
+        .pendiente {
+         width: 50px;
+         height: 10px;
+         background-color:#ff00a2; 
+         border-radius: 5px;
+         margin-top: 10px;
+         margin-left: 10px;
+        }
+        .pendiente--abel {
+          background-color:rgb(17, 0, 255);  
+        }
+        
+        .titulo-tareas {
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #53bdbc;
+          border-radius: 10px;
+          color: white;
+          font-size:medium;
+          padding: 3px;
+        }
+
 
 
     </style>
@@ -130,19 +271,19 @@
 <body>
    <!--NAVIGATION BAR-->
 
-<div class="topnav">
+<div class="Topnav">
     <div>
         <div id="Topnav-logo"><img class="aaaa" src="/logo/1x/task sobre blanco.png" alt="Logo"></div>
     </div>
-    <div class="search-container">
-        <form id="search-form" action="mainpage.html">
+    <div class="Search-container">
+        <form id="Search-form" action="mainpage.html">
             <input type="text" placeholder="Buscar">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
-    <div class="profile-menu">
+    <div class="Profile-menu">
       <ul>
-        <li class="profile-pic">
+        <li class="Profile-pic">
           <img src="/img/perfil1.png"/>
           
         </li>
@@ -155,24 +296,98 @@
     <div class="contenedor">
       
      <div class="cards">
-          <div class="titulo"><h3>Tareas Pendientes</h3></div>
-          <div class="tareas-pendientes">
+          <div class="titulo titulo--cards"><h3>Tareas Pendientes</h3></div>
+          <div class="tareas-pendientes tareas-pendientes--enproceso">
             <div>
-                Hacer la cabecera de la app
+              <div class="caja-usuario"></div>
+              <div class="caja-usuario">
+                <img class="foto-usuario" src="../img/1x/USUARIO1.png">
+              <h1 class="username">Lara Rodriguez</h1>
+              <div class="pendiente"></div>
+              </div class="caja-tareas">
+              <h3 class="titulo-tareas">Página Web</h3>
+              <div>
+               <li class="texto">Hacer la cabecera de la app</li> 
+               <li class="texto">Pasar apuntes a limpio</li>
             </div>
+          </div>
           </div>
           <div class="tareas-pendientes tareas-pendientes--enproceso">
             <div>
-                Hacer fotos del patio de noche
+              <div class="caja-usuario"></div>
+              <div class="caja-usuario">
+                <img class="foto-usuario" src="../img/1x/1x/usuario2.png">
+              <h1 class="username">Abel Guti</h1>
+              <div class="pendiente pendiente--abel"></div>
+              </div class="caja-tareas">
+              <h3 class="titulo-tareas">Página Web</h3>
+              <div>
+               <li class="texto">Hacer la cabecera de la app</li> 
             </div>
-        </div>
+          </div>
+          </div>
+          <div class="tareas-pendientes">
+            <div>
+              <div class="caja-usuario"></div>
+              <div class="caja-usuario">
+                <img class="foto-usuario" src="../img/1x/USUARIO1.png">
+              <h1 class="username">Lara Rodriguez</h1>
+              <div class="pendiente"></div>
+              </div class="caja-tareas">
+              <h3 class="titulo-tareas">Página Web</h3>
+              <div>
+               <li class="texto">Hacer la cabecera de la app</li> 
+               <li class="texto">Pasar apuntes a limpio</li>
+            </div>
+          </div>
+          </div>
+          <div class="tareas-pendientes">
+            <div>
+              <div class="caja-usuario"></div>
+              <div class="caja-usuario">
+                <img class="foto-usuario" src="../img/1x/USUARIO1.png">
+              <h1 class="username">Lara Rodriguez</h1>
+              <div class="pendiente"></div>
+              </div class="caja-tareas">
+              <h3 class="titulo-tareas">Página Web</h3>
+              <div>
+               <li class="texto">Hacer la cabecera de la app</li> 
+            </div>
+          </div>
+          </div>
+          
+          
         </div>
          <div class="cards">
             <div class="titulo titulo--cards"><h3>Tareas Terminadas</h3></div>
-            <div class="tareasPendientes">
+            <div class="tareas-pendientes tareas-pendientes--termianadas">
+              <div>
+                <div class="caja-usuario"></div>
+                <div class="caja-usuario">
+                  <img class="foto-usuario" src="../img/1x/USUARIO1.png">
+                <h1 class="username">Lara Rodriguez</h1>
+                <div class="pendiente"></div>
+                </div class="caja-tareas">
+                <h3 class="titulo-tareas">Página Web</h3>
+                <div>
+                 <li class="texto">Hacer la cabecera de la app</li> 
+              </div>
             </div>
-            <div class="tareas-pendientes tareas-pendientes--enproceso">
           </div>
+          <div class="tareas-pendientes tareas-pendientes--termianadas">
+            <div>
+              <div class="caja-usuario"></div>
+              <div class="caja-usuario">
+                <img class="foto-usuario" src="../img/1x/USUARIO1.png">
+              <h1 class="username">Lara Rodriguez</h1>
+              <div class="pendiente"></div>
+              </div class="caja-tareas">
+              <h3 class="titulo-tareas">Página Web</h3>
+              <div>
+               <li class="texto">Hacer la cabecera de la app</li> 
+            </div>
+          </div>
+        </div>
           </div>
       </div>
       <div class="historial">
