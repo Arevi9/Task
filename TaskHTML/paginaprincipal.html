@@ -17,7 +17,13 @@
         flex-direction: row;
         align-items:center;
         justify-content: space-around;
+        background-image: url(../img/fondo\ libreta.png);
+        background-size:contain;
+       /* Ajusta la imagen para cubrir todo el fondo */
+       background-position: center; /* Centra la imagen en el fondo */
+       background-repeat: no-repeat;
         }
+
         .Btn {    font-family: 'Nunito';
     padding: 10px;
     background-color: #f5ca92;
@@ -271,24 +277,23 @@
 <body>
    <!--NAVIGATION BAR-->
 
+<!--NAVIGATION BAR-->
+
 <div class="Topnav">
-    <div>
-        <div id="Topnav-logo"><img class="aaaa" src="/logo/1x/task sobre blanco.png" alt="Logo"></div>
+  <div class="Topnav-logo"><a href="/TaskHTML/paginaprincipal.html"><img class="Topnav-logo-img" src="/logo/1x/task sobre blanco.png" alt="Logo"></a></div>
+  <div class="Topnav-buttons">
+      <div class="Topnav-buttons--decoration"><a href="/TaskHTML/Creartablero.html"><h2 class="H2-buttons">Crear tarea</h2></a></div>
+      <div class="Topnav-buttons--decoration"><h2 class="H2-buttons">Usuarios</h2></div>
+      <div class="Topnav-buttons--decoration"><h2 class="H2-buttons">Calendario</div>
     </div>
     <div class="Search-container">
-        <form id="Search-form" action="mainpage.html">
-            <input type="text" placeholder="Buscar">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <div class="Profile-menu">
-      <ul>
-        <li class="Profile-pic">
-          <img src="/img/perfil1.png"/>
-          
-        </li>
-      </ul>
-    </div>
+      <form id="Search-form" action="/TaskHTML/paginaprincipal.html">
+          <input type="text" placeholder="Buscar">
+          <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+</div>  
+
+</div>
 
 </div>
 
