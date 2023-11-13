@@ -5,7 +5,11 @@
   justify-content: center;
   width: 100%;}
 
-
+  body {        background-image: url(../img/fondo\ libreta.png);
+    background-size:contain;
+   background-position: center; 
+   background-repeat: no-repeat;
+  margin-bottom: 200px;}
 
 .Container-Register {
     text-align: center;
