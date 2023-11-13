@@ -18,7 +18,7 @@
         margin-bottom: 0px;
     }
 
-.ciudades {
+.usuarios {
     text-align: center;
 }
 .sin-tareas {
@@ -26,7 +26,7 @@
     color: #ffffff;
 }
     
-    .city {
+    .usuario{
         background-color: rgb(255, 255, 255);
         width: 300px;
         height: 350px;
@@ -36,7 +36,7 @@
         display: inline-block;
     }
 
-    .city--no-tareas {
+    .usuario--no-tareas {
         background-color: #f5ca92;
         width: 300px;
         height: 350px;
@@ -46,7 +46,7 @@
         display: inline-block;
     }
     
-    .city img {
+    .usuario img {
         width: 150px;
         height: 150px;
         object-fit: cover;
@@ -54,15 +54,15 @@
     margin-top: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);}
 
-        .ciudadimg {
+        .usuarioimg {
             filter: brightness(0.9);
         }
     
-        .city {
+        .usuario {
             transform: scale(var(--escala, 1));
             transition: transform 0.25s;
           }
-          .city:hover{
+          .usuario:hover{
             --escala: 1.1;
             cursor:pointer;}
 
@@ -77,6 +77,6 @@
         margin-top: 7px;}
 
         .material-symbols-outlined {
-            color: #ffffff;
+            color: #409492;
             padding-top: 20px;
         }
